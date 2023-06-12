@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Quiz Score</title>
+            <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .score-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        </style>
+        </head>
+        <body>
+            <h1>Quiz Score</h1>
+        <div class="score-container">
+            <div id="TOTAL_SCORE"></div>
+            <div id="score2"></div>
+            <div id="score42"></div>
+            
+        </div>
+            <script>
+            // Retrieve the values from local storage
+            const score2 = localStorage.getItem("score2") ?? "0";
+            const score42 = localStorage.getItem("score42") ?? "0";
+            
+            
+
+            // Convert the retrieved values to numbers
+            let score2Number = parseInt(score2);
+            let score42Number = parseInt(score42);
+            
+            // Add the values together
+            const TOTAL_SCORE = score2Number + score42Number;
+
+            // Display the individual scores and the total score on the webpage
+            const totalScoreElement = document.getElementById("TOTAL_SCORE");
+            const scoreElement2 = document.getElementById("score2");
+            const scoreElement42 = document.getElementById("score42");
+                
+            totalScoreElement.textContent = "TOTAL_SCORE: " + TOTAL_SCORE;
+            scoreElement2.textContent = "score 2: " + score2;
+            scoreElement42.textContent = "score 42: " + score42;
+            </script>
+        </body>
+    </html>
