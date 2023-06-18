@@ -34,6 +34,22 @@
             <div id="score5"></div>
             <div id="score6"></div>
             <div id="score7"></div>
+            <div id="score8"></div>
+            <div id="score9"></div>
+            <div id="score10"></div>
+            <div id="score11"></div>
+            <div id="score12"></div>
+            <div id="score13"></div>
+            <div id="score14"></div>
+            <div id="score15"></div>
+            <div id="score16"></div>
+            <div id="score17"></div>
+            <div id="score18"></div>
+            <div id="score19"></div>
+            <div id="score20"></div>
+            <div id="score21"></div>
+            <div id="score22"></div>
+            <div id="score23"></div>
             
         </div>
             <script>
@@ -45,7 +61,22 @@
             const score5 = localStorage.getItem("score5") ?? "0";
             const score6 = localStorage.getItem("score6") ?? "0";
             const score7 = localStorage.getItem("score7") ?? "0";
-            
+            const score8 = localStorage.getItem("score8") ?? "0";
+            const score9 = localStorage.getItem("score9") ?? "0";
+            const score10 = localStorage.getItem("score10") ?? "0";
+            const score11 = localStorage.getItem("score11") ?? "0";
+            const score12 = localStorage.getItem("score12") ?? "0";
+            const score13 = localStorage.getItem("score13") ?? "0";
+            const score14 = localStorage.getItem("score14") ?? "0";
+            const score15 = localStorage.getItem("score15") ?? "0";
+            const score16 = localStorage.getItem("score16") ?? "0";
+            const score17 = localStorage.getItem("score17") ?? "0";
+            const score18 = localStorage.getItem("score18") ?? "0";
+            const score19 = localStorage.getItem("score19") ?? "0";
+            const score20 = localStorage.getItem("score20") ?? "0";
+            const score21 = localStorage.getItem("score21") ?? "0";
+            const score22 = localStorage.getItem("score22") ?? "0";
+            const score23 = localStorage.getItem("score23") ?? "0";
             
             
 
@@ -57,9 +88,25 @@
             let score5Number = parseInt(score5);
             let score6Number = parseInt(score6);
             let score7Number = parseInt(score7);
-            
-            // Add the values together
-            const TOTAL_SCORE = score1Number + score2Number + score3Number + score4Number + score5Number + score6Number + score7Number;
+            let score8Number = parseInt(score8);
+            let score9Number = parseInt(score9);
+            let score10Number = parseInt(score10);
+            let score11Number = parseInt(score11);
+            let score12Number = parseInt(score12);
+            let score13Number = parseInt(score13);
+            let score14Number = parseInt(score14);
+            let score15Number = parseInt(score15);
+            let score16Number = parseInt(score16);
+            let score17Number = parseInt(score17);
+            let score18Number = parseInt(score18);
+            let score19Number = parseInt(score19);
+            let score20Number = parseInt(score20);
+            let score21Number = parseInt(score21);
+            let score22Number = parseInt(score22);
+            let score23Number = parseInt(score23);
+   
+                // Add the values together
+            const TOTAL_SCORE = score1Number + score2Number + score3Number + score4Number + score5Number + score6Number + score7Number + score8Number + score9Number + score10Number + score11Number + score12Number + score13Number + score14Number + score15Number + score16Number + score17Number + score18Number + score19Number + score20Number + score21Number + score22Number + score23Number;
 
             // Display the individual scores and the total score on the webpage
             const totalScoreElement = document.getElementById("TOTAL_SCORE");
@@ -70,6 +117,22 @@
             const scoreElement5 = document.getElementById("score5");
             const scoreElement6 = document.getElementById("score6");
             const scoreElement7 = document.getElementById("score7");
+            const scoreElement8 = document.getElementById("score8");
+            const scoreElement9 = document.getElementById("score9");
+            const scoreElement10 = document.getElementById("score10");
+            const scoreElement11 = document.getElementById("score11");
+            const scoreElement12 = document.getElementById("score12");
+            const scoreElement13 = document.getElementById("score13");
+            const scoreElement14 = document.getElementById("score14");
+            const scoreElement15 = document.getElementById("score15");
+            const scoreElement16 = document.getElementById("score16");
+            const scoreElement17 = document.getElementById("score17");
+            const scoreElement18 = document.getElementById("score18");
+            const scoreElement19 = document.getElementById("score19");
+            const scoreElement20 = document.getElementById("score20");
+            const scoreElement21 = document.getElementById("score21");
+            const scoreElement22 = document.getElementById("score22");
+            const scoreElement23 = document.getElementById("score23");
                 
             totalScoreElement.textContent = "TOTAL_SCORE: " + TOTAL_SCORE;
             scoreElement1.textContent = "score 1: " + score1;
@@ -79,7 +142,22 @@
             scoreElement5.textContent = "score 5: " + score5;
             scoreElement6.textContent = "score 6: " + score6;
             scoreElement7.textContent = "score 7: " + score7;
-                
+            scoreElement8.textContent = "score 8: " + score8;
+            scoreElement9.textContent = "score 9: " + score9;
+            scoreElement10.textContent = "score 10: " + score10;
+            scoreElement11.textContent = "score 11: " + score11;
+            scoreElement12.textContent = "score 12: " + score12;
+            scoreElement13.textContent = "score 13: " + score13;
+            scoreElement14.textContent = "score 14: " + score14;
+            scoreElement15.textContent = "score 15: " + score15;
+            scoreElement16.textContent = "score 16: " + score16;
+            scoreElement17.textContent = "score 17: " + score17;
+            scoreElement18.textContent = "score 18: " + score18;
+            scoreElement19.textContent = "score 19: " + score19;
+            scoreElement20.textContent = "score 20: " + score20;
+            scoreElement21.textContent = "score 21: " + score21;
+            scoreElement22.textContent = "score 22: " + score22;
+            scoreElement23.textContent = "score 23: " + score23;
             </script>
         </body>
     </html>
