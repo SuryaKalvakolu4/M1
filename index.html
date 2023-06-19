@@ -27,7 +27,7 @@
             <h1>Quiz Score</h1>
         <div class="score-container">
             <div id="TOTAL_SCORE"></div>
-            <div id="Station_22_Score"></div>
+            
             <div id="Station_25_Score"></div>
             <div id="Station_43_Score"></div>
             <div id="Station_47_Score"></div>
@@ -54,7 +54,7 @@
         </div>
             <script>
             // Retrieve the values from local storage
-            const Station_22_Score = localStorage.getItem("Station_22_Score") ?? "0";
+            
             const Station_25_Score = localStorage.getItem("Station_25_Score") ?? "0";
             const Station_43_Score = localStorage.getItem("Station_43_Score") ?? "0";
             const Station_47_Score = localStorage.getItem("Station_47_Score") ?? "0";
@@ -81,7 +81,7 @@
             
 
             // Convert the retrieved values to numbers
-            let score1Number = parseInt(Station_22_Score);
+            
             let score2Number = parseInt(Station_25_Score);
             let score3Number = parseInt(Station_43_Score);
             let score4Number = parseInt(Station_47_Score);
@@ -106,11 +106,11 @@
             let score23Number = parseInt(Station_10_Score);
    
                 // Add the values together
-            const TOTAL_SCORE = score1Number + score2Number + score3Number + score4Number + score5Number + score6Number + score7Number + score8Number + score9Number + score10Number + score11Number + score12Number + score13Number + score14Number + score15Number + score16Number + score17Number + score18Number + score19Number + score20Number + score21Number + score22Number + score23Number;
+            const TOTAL_SCORE = score2Number + score3Number + score4Number + score5Number + score6Number + score7Number + score8Number + score9Number + score10Number + score11Number + score12Number + score13Number + score14Number + score15Number + score16Number + score17Number + score18Number + score19Number + score20Number + score21Number + score22Number + score23Number;
 
             // Display the individual scores and the total score on the webpage
             const totalScoreElement = document.getElementById("TOTAL_SCORE");
-            const scoreElement1 = document.getElementById("Station_22_Score");
+            
             const scoreElement2 = document.getElementById("Station_25_Score");
             const scoreElement3 = document.getElementById("Station_43_Score");
             const scoreElement4 = document.getElementById("Station_47_Score");
@@ -135,7 +135,7 @@
             const scoreElement23 = document.getElementById("Station_10_Score");
                 
             totalScoreElement.textContent = "TOTAL_SCORE: " + TOTAL_SCORE;
-            scoreElement1.textContent = "Station_22_Score: " + Station_22_Score;
+            
             scoreElement2.textContent = "Station_25_Score: " + Station_25_Score;
             scoreElement3.textContent = "Station_43_Score: " + Station_43_Score;
             scoreElement4.textContent = "Station_47_Score: " + Station_47_Score;
