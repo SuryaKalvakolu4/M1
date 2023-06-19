@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+   <!DOCTYPE html>
         <html>
         <head>
             <title>Quiz Score</title>
@@ -27,7 +27,7 @@
             <h1>Quiz Score</h1>
         <div class="score-container">
             <div id="TOTAL_SCORE"></div>
-            
+            <div id="Station_22_Score"></div>
             <div id="Station_25_Score"></div>
             <div id="Station_43_Score"></div>
             <div id="Station_47_Score"></div>
@@ -54,21 +54,21 @@
         </div>
             <script>
             // Retrieve the values from local storage
-            
+            const Station_22_Score = localStorage.getItem("Station_22_Score") ?? "0";
             const Station_25_Score = localStorage.getItem("Station_25_Score") ?? "0";
             const Station_43_Score = localStorage.getItem("Station_43_Score") ?? "0";
             const Station_47_Score = localStorage.getItem("Station_47_Score") ?? "0";
             const Station_38_Score = localStorage.getItem("Station_38_Score") ?? "0";
             const Station_40_Score = localStorage.getItem("Station_40_Score") ?? "0";
             const Station_24_Score = localStorage.getItem("Station_24_Score") ?? "0";
-            const Station_13_Score = localStorage.getItem("Station_13_Score") ?? "0";
+            const Station_13_1_Score = localStorage.getItem("Station_13_1_Score") ?? "0";
             const Station_16_Score = localStorage.getItem("Station_16_Score") ?? "0";
             const Station_15_Score = localStorage.getItem("Station_15_Score") ?? "0";
             const Station_19_Score = localStorage.getItem("Station_19_Score") ?? "0";
             const Station_18_Score = localStorage.getItem("Station_18_Score") ?? "0";
             const Station_32_Score = localStorage.getItem("Station_32_Score") ?? "0";
             const Station_17_Score = localStorage.getItem("Station_17_Score") ?? "0";
-            const Station_13_1_Score = localStorage.getItem("Station_13_1_Score") ?? "0";
+            const Station_13_2_Score = localStorage.getItem("Station_13_2_Score") ?? "0";
             const Station_11_Score = localStorage.getItem("Station_11_Score") ?? "0";
             const Station_14_Score = localStorage.getItem("Station_14_Score") ?? "0";
             const Station_3_Score = localStorage.getItem("Station_3_Score") ?? "0";
@@ -81,21 +81,21 @@
             
 
             // Convert the retrieved values to numbers
-            
+            let score1Number = parseInt(Station_22_Score);
             let score2Number = parseInt(Station_25_Score);
             let score3Number = parseInt(Station_43_Score);
             let score4Number = parseInt(Station_47_Score);
             let score5Number = parseInt(Station_38_Score);
             let score6Number = parseInt(Station_40_Score);
             let score7Number = parseInt(Station_24_Score);
-            let score8Number = parseInt(Station_13_Score);
+            let score8Number = parseInt(Station_13_1_Score);
             let score9Number = parseInt(Station_16_Score);
             let score10Number = parseInt(Station_15_Score);
             let score11Number = parseInt(Station_19_Score);
             let score12Number = parseInt(Station_18_Score);
             let score13Number = parseInt(Station_32_Score);
             let score14Number = parseInt(Station_17_Score);
-            let score15Number = parseInt(Station_13_1_Score);
+            let score15Number = parseInt(Station_13_2_Score);
             let score16Number = parseInt(Station_11_Score);
             let score17Number = parseInt(Station_14_Score);
             let score18Number = parseInt(Station_3_Score);
@@ -106,25 +106,25 @@
             let score23Number = parseInt(Station_10_Score);
    
                 // Add the values together
-            const TOTAL_SCORE = score2Number + score3Number + score4Number + score5Number + score6Number + score7Number + score8Number + score9Number + score10Number + score11Number + score12Number + score13Number + score14Number + score15Number + score16Number + score17Number + score18Number + score19Number + score20Number + score21Number + score22Number + score23Number;
+            const TOTAL_SCORE = score1Number + score2Number + score3Number + score4Number + score5Number + score6Number + score7Number + score8Number + score9Number + score10Number + score11Number + score12Number + score13Number + score14Number + score15Number + score16Number + score17Number + score18Number + score19Number + score20Number + score21Number + score22Number + score23Number;
 
             // Display the individual scores and the total score on the webpage
             const totalScoreElement = document.getElementById("TOTAL_SCORE");
-            
+            const scoreElement1 = document.getElementById("Station_22_Score");
             const scoreElement2 = document.getElementById("Station_25_Score");
             const scoreElement3 = document.getElementById("Station_43_Score");
             const scoreElement4 = document.getElementById("Station_47_Score");
             const scoreElement5 = document.getElementById("Station_38_Score");
             const scoreElement6 = document.getElementById("Station_40_Score");
             const scoreElement7 = document.getElementById("Station_24_Score");
-            const scoreElement8 = document.getElementById("Station_13_Score");
+            const scoreElement8 = document.getElementById("Station_13_1_Score");
             const scoreElement9 = document.getElementById("Station_16_Score");
             const scoreElement10 = document.getElementById("Station_15_Score");
             const scoreElement11 = document.getElementById("Station_19_Score");
             const scoreElement12 = document.getElementById("Station_18_Score");
             const scoreElement13 = document.getElementById("Station_32_Score");
             const scoreElement14 = document.getElementById("Station_17_Score");
-            const scoreElement15 = document.getElementById("Station_13_1_Score");
+            const scoreElement15 = document.getElementById("Station_13_2_Score");
             const scoreElement16 = document.getElementById("Station_11_Score");
             const scoreElement17 = document.getElementById("Station_14_Score");
             const scoreElement18 = document.getElementById("Station_3_Score");
@@ -135,21 +135,21 @@
             const scoreElement23 = document.getElementById("Station_10_Score");
                 
             totalScoreElement.textContent = "TOTAL_SCORE: " + TOTAL_SCORE;
-            
+            scoreElement1.textContent = "Station_22_Score: " + Station_22_Score;
             scoreElement2.textContent = "Station_25_Score: " + Station_25_Score;
             scoreElement3.textContent = "Station_43_Score: " + Station_43_Score;
             scoreElement4.textContent = "Station_47_Score: " + Station_47_Score;
             scoreElement5.textContent = "Station_38_Score: " + Station_38_Score;
             scoreElement6.textContent = "Station_40_Score: " + Station_40_Score;
             scoreElement7.textContent = "Station_24_Score: " + Station_24_Score;
-            scoreElement8.textContent = "Station_13_Score: " + Station_13_Score;
+            scoreElement8.textContent = "Station_13_1_Score: " + Station_13_1_Score;
             scoreElement9.textContent = "Station_16_Score: " + Station_16_Score;
             scoreElement10.textContent = "Station_15_Score: " + Station_15_Score;
             scoreElement11.textContent = "Station_19_Score: " + Station_19_Score;
             scoreElement12.textContent = "Station_18_Score: " + Station_18_Score;
             scoreElement13.textContent = "Station_32_Score: " + Station_32_Score;
             scoreElement14.textContent = "Station_17_Score: " + Station_17_Score;
-            scoreElement15.textContent = "Station_13_1_Score: " + Station_13_1_Score;
+            scoreElement15.textContent = "Station_13_2_Score: " + Station_13_2_Score;
             scoreElement16.textContent = "Station_11_Score: " + Station_11_Score;
             scoreElement17.textContent = "Station_14_Score: " + Station_14_Score;
             scoreElement18.textContent = "Station_3_Score: " + Station_3_Score;
