@@ -47,20 +47,20 @@
         <td id="Station_25_Score">0</td>
     </tr>
     <tr>
-        <td>Station 43</td>
-        <td id="Station_43_Score">0</td>
+        <td>SerialN 43</td>
+        <td id="SerialN_43_Score">0</td>
     </tr>
     <tr>
-        <td>Station 47</td>
-        <td id="Station_47_Score">0</td>
+        <td>SerialN 47</td>
+        <td id="SerialN_47_Score">0</td>
     </tr>
     <tr>
-        <td>Station 38</td>
-        <td id="Station_38_Score">0</td>
+        <td>SerialN 38</td>
+        <td id="SerialN_38_Score">0</td>
     </tr>
     <tr>
-        <td>Station 40</td>
-        <td id="Station_40_Score">0</td>
+        <td>SerialN 40</td>
+        <td id="SerialN_40_Score">0</td>
     </tr>
     <tr>
         <td>Station 24</td>
@@ -100,7 +100,7 @@
     </tr>
     <tr>
         <td>Station 11</td>
-        <td id="Station_11_Score">0</td>
+        <td id="SerialN_11_Score">0</td>
     </tr>
     <tr>
         <td>SerialN 14</td>
@@ -140,10 +140,10 @@
     // Retrieve the values from local storage
     const Station_22_Score = localStorage.getItem("Station_22_Score") ?? "0";
     const Station_25_Score = localStorage.getItem("Station_25_Score") ?? "0";
-    const Station_43_Score = localStorage.getItem("Station_43_Score") ?? "0";
-    const Station_47_Score = localStorage.getItem("Station_47_Score") ?? "0";
-    const Station_38_Score = localStorage.getItem("Station_38_Score") ?? "0";
-    const Station_40_Score = localStorage.getItem("Station_40_Score") ?? "0";
+    const SerialN_43_Score = localStorage.getItem("SerialN_43_Score") ?? "0";
+    const SerialN_47_Score = localStorage.getItem("SerialN_47_Score") ?? "0";
+    const SerialN_38_Score = localStorage.getItem("SerialN_38_Score") ?? "0";
+    const SerialN_40_Score = localStorage.getItem("SerialN_40_Score") ?? "0";
     const Station_24_Score = localStorage.getItem("Station_24_Score") ?? "0";
     const Station_13_Score = localStorage.getItem("Station_13_Score") ?? "0";
     const Station_16_Score = localStorage.getItem("Station_16_Score") ?? "0";
@@ -166,10 +166,10 @@
     const scores = [
         parseInt(Station_22_Score),
         parseInt(Station_25_Score),
-        parseInt(Station_43_Score),
-        parseInt(Station_47_Score),
-        parseInt(Station_38_Score),
-        parseInt(Station_40_Score),
+        parseInt(SerialN_43_Score),
+        parseInt(SerialN_47_Score),
+        parseInt(SerilN_38_Score),
+        parseInt(SerialN_40_Score),
         parseInt(Station_24_Score),
         parseInt(Station_13_Score),
         parseInt(Station_16_Score),
@@ -195,10 +195,10 @@
     // Update the score values in the table
     document.getElementById("Station_22_Score").textContent = Station_22_Score;
     document.getElementById("Station_25_Score").textContent = Station_25_Score;
-    document.getElementById("Station_43_Score").textContent = Station_43_Score;
-    document.getElementById("Station_47_Score").textContent = Station_47_Score;
-    document.getElementById("Station_38_Score").textContent = Station_38_Score;
-    document.getElementById("Station_40_Score").textContent = Station_40_Score;
+    document.getElementById("SerialN_43_Score").textContent = SerialN_43_Score;
+    document.getElementById("SerialN_47_Score").textContent = SerialN_47_Score;
+    document.getElementById("SerialN_38_Score").textContent = SerialN_38_Score;
+    document.getElementById("SerialN_40_Score").textContent = SerialN_40_Score;
     document.getElementById("Station_24_Score").textContent = Station_24_Score;
     document.getElementById("Station_13_Score").textContent = Station_13_Score;
     document.getElementById("Station_16_Score").textContent = Station_16_Score;
